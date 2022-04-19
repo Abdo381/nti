@@ -1,0 +1,11 @@
+const router = require('express').Router()
+const Invoo = require("../app/controller/invoo.controller")
+router.get("/getInvo",Invoo.getInvo)
+router.post("/submit",Invoo.status)
+router.get("/id",Invoo.max)
+router.get("/getPage",Invoo.namePage)
+router.post("/hotKey", Invoo.hotKey)
+router.get("/product",Invoo.getProduct)
+router.get("/productD",Invoo.getprod)
+router.post("/check", Invoo.check)
+module.exports=router
